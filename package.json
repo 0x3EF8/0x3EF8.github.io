@@ -1,0 +1,70 @@
+{
+  "name": "personal-portfolio",
+  "version": "1.0.0",
+  "description": "A minimal portfolio built with React, enhanced with modern UI components and animations, showcasing projects and skills.",
+  "main": "index.js",
+  "homepage": "https://0x3EF8.github.io/0x3EF8.github.io",
+  "author": "Jay Patrick Cano",
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:0x3EF8/0x3EF8.github.io.git"
+  },
+  "scripts": {
+    "prestart": "npm run format",
+    "start": "react-scripts start",
+    "prebuild": "npm run format",
+    "build": "react-scripts build",
+    "pretest": "npm run format",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject",
+    "format": "prettier --write \"./**/*.{js,jsx,ts,tsx,json,css,scss,md,html}\"",
+    "format:check": "prettier --check \"./**/*.{js,jsx,ts,tsx,json,css,scss,md,html}\"",
+    "lint": "eslint \"./**/*.{js,jsx,ts,tsx,json,html}\" --fix",
+    "prepare": "husky install",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
+  },
+  "dependencies": {
+    "@headlessui/react": "^2.1.2",
+    "@heroicons/react": "^2.1.5",
+    "@tailwindcss/aspect-ratio": "^0.4.2",
+    "@tailwindcss/forms": "^0.5.7",
+    "aos": "^2.3.4",
+    "daisyui": "^4.12.10",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "react-icons": "^5.2.1",
+    "react-router-dom": "^6.24.1",
+    "react-type-animation": "^3.2.0"
+  },
+  "devDependencies": {
+    "@babel/plugin-proposal-private-property-in-object": "^7.21.11",
+    "eslint": "^8.57.0",
+    "eslint-config-prettier": "^8.10.0",
+    "eslint-plugin-prettier": "^4.2.1",
+    "gh-pages": "^6.1.1",
+    "husky": "^8.0.3",
+    "lint-staged": "^13.3.0",
+    "prettier": "^3.3.3",
+    "react-scripts": "latest"
+  },
+  "lint-staged": {
+    "*.{js,jsx,ts,tsx,json,css,scss,md,html}": [
+      "prettier --write",
+      "eslint --fix",
+      "git add"
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  }
+}
