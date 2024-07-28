@@ -10,20 +10,20 @@
     "url": "git@github.com:0x3EF8/0x3EF8.github.io.git"
   },
   "scripts": {
-    "prestart": "npm run format",
-    "start": "react-scripts start",
-    "prebuild": "npm run format",
-    "build": "react-scripts build",
-    "pretest": "npm run format",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject",
-    "format": "prettier --write \"./**/*.{js,jsx,ts,tsx,json,css,scss,md,html}\"",
-    "format:check": "prettier --check \"./**/*.{js,jsx,ts,tsx,json,css,scss,md,html}\"",
-    "lint": "eslint \"./**/*.{js,jsx,ts,tsx,json,html}\" --fix",
-    "prepare": "husky install",
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -d build"
-  },
+  "prestart": "npm run format",
+  "start": "react-scripts start",
+  "prebuild": "npm run format",
+  "build": "react-scripts build",
+  "pretest": "npm run format",
+  "test": "react-scripts test",
+  "eject": "react-scripts eject",
+  "format": "prettier --write \"./**/*.{js,jsx,ts,tsx,json,css,scss,md,html}\"",
+  "format:check": "prettier --check \"./**/*.{js,jsx,ts,tsx,json,css,scss,md,html}\"",
+  "lint": "eslint \"./**/*.{js,jsx,ts,tsx,json,html}\" --fix",
+  "prepare": "husky install",
+  "predeploy": "npm run build",
+  "deploy": "gh-pages -d build --repo https://$GITHUB_TOKEN@github.com/0x3EF8/0x3EF8.github.io.git"
+}
   "dependencies": {
     "@headlessui/react": "^2.1.2",
     "@heroicons/react": "^2.1.5",
