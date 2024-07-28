@@ -22,7 +22,7 @@
     "lint": "eslint \"./**/*.{js,jsx,ts,tsx,json,html}\" --fix",
     "prepare": "husky install",
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d build"
+    "deploy": "gh-pages -d build -u \"https://${GITHUB_ACTOR}:${GITHUB_TOKEN}@github.com/${GITHUB_REPOSITORY}.git\""
   },
   "dependencies": {
     "@headlessui/react": "^2.1.2",
