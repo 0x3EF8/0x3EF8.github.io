@@ -22,7 +22,7 @@
     "lint": "eslint \"./**/*.{js,jsx,ts,tsx,json,html}\" --fix",
     "prepare": "husky install",
     "predeploy": "npm run build",
-    "deploy": "git config --global user.email '0x3ef8@gmail.com' && git config --global user.name '0x3EF8' && gh-pages -d build -u \"https://${GITHUB_ACTOR}:${GITHUB_TOKEN}@github.com/${GITHUB_REPOSITORY}.git\""
+    "deploy": "git config user.email '0x3ef8@gmail.com' && git config user.name '0x3EF8' && gh-pages -d build -u \"https://${GITHUB_ACTOR}:${GITHUB_TOKEN}@github.com/${GITHUB_REPOSITORY}.git\""
   },
   "dependencies": {
     "@headlessui/react": "^2.1.2",
